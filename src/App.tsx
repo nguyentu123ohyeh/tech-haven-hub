@@ -17,7 +17,8 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
+      {/* THÊM basename vào đây */}
+      <BrowserRouter basename="/tech-haven-hub">
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/products" element={<Products />} />
